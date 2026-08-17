@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>ASHISH ARMY</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+
+		<style>
+			:root{
+				--bg:#1A0E14;
+				--card:#241420;
+				--ink:#F5F5F7;
+				--muted:#9C959B;
+				--line:#3A2130;
+				--accent:#FF6FA5;
+				--accent-ink:#1A0E14;
+			}
+			*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+			html,body{overflow-x:hidden}
+			body{
+				font-family:'Inter',-apple-system,sans-serif;
+				background:var(--bg);
+				color:var(--ink);
+				min-height:100vh;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				padding:24px 16px;
+				-webkit-font-smoothing:antialiased;
+			}
+
+			.card{
+				width:100%;
+				max-width:380px;
+				padding:0 8px;
+				display:flex;
+				flex-direction:column;
+				align-items:center;
+				text-align:center;
+				gap:0;
+				animation:rise .5s cubic-bezier(.16,1,.3,1) both;
+			}
+			@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+			.avatar{
+				width:132px;
+				height:132px;
+				border-radius:28px;
+				background-size:cover;
+				background-position:center;
+				background-image:url('ashish.jpg');
+				background-color:var(--card);
+				border:2px solid var(--ink);
+				margin-bottom:22px;
+				flex-shrink:0;
+			}
+
+			h1{
+				font-family:'Sora',-apple-system,sans-serif;
+				font-size:30px;
+				font-weight:800;
+				letter-spacing:-0.02em;
+				background:linear-gradient(180deg,#FFFFFF 0%,#D9D9DE 140%);
+				-webkit-background-clip:text;
+				background-clip:text;
+				color:transparent;
+				margin-bottom:10px;
+			}
+
+			.sub-text{
+				font-size:15px;
+				font-weight:500;
+				color:var(--ink);
+				opacity:0.75;
+				letter-spacing:-0.01em;
+				line-height:1.5;
+				margin-bottom:28px;
+				max-width:280px;
+			}
+
+			.cta{
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				gap:8px;
+				width:100%;
+				padding:15px 20px;
+				border-radius:14px;
+				font-size:16px;
+				font-weight:600;
+				text-decoration:none;
+				border:none;
+				cursor:pointer;
+				background:var(--accent);
+				color:var(--accent-ink);
+				transition:transform .15s ease, opacity .15s ease;
+			}
+			.cta:active{transform:scale(0.97);opacity:.9}
+			.cta svg{width:17px;height:17px;fill:var(--accent-ink);flex-shrink:0}
+
+			.meta-row{
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				gap:6px;
+				margin-top:20px;
+				font-size:13px;
+				font-weight:600;
+				letter-spacing:-0.01em;
+				color:var(--ink);
+				opacity:0.85;
+			}
+			.dot{
+				width:6px;
+				height:6px;
+				border-radius:50%;
+				background:var(--ink);
+				flex-shrink:0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="card">
+			<div class="avatar"></div>
+			<h1>𝐀𝐒𝐇𝐈𝐒𝐇 𝐀𝐑𝐌𝐘</h1>
+			<p class="sub-text">𝗍𝖺𝗉 𝖻𝖾𝗅𝗈𝗐 𝗍𝗈 𝗃𝗈𝗂𝗇</p>
+
+			<a class="cta" href="https://t.me/+VUh1rg5Yh4FkYzI1" target="_blank" rel="noopener">
+				<svg viewBox="0 0 24 24"><path d="M21.94 4.63c.27-1.13-.87-2.03-1.9-1.57L2.72 10.6c-1.1.49-1.09 2.06.02 2.53l4.5 1.9 1.7 5.48c.24.77 1.22 1 1.8.42l2.53-2.5 4.6 3.4c.83.62 2.02.18 2.25-.83L21.94 4.63zM8.8 13.7l9.4-6.34c.28-.19.58.17.34.4l-7.9 7.4c-.28.26-.46.61-.5.99l-.24 2.16-1.1-4.61z"/></svg>
+				Join on Telegram
+			</a>
+
+			<div class="meta-row">
+				<span class="dot"></span>
+				<span>𝖥𝗋𝖾𝖾 𝗍𝗈 𝗃𝗈𝗂𝗇 • 𝖭𝗈 𝗌𝗂𝗀𝗇-𝗎𝗉</span>
+			</div>
+		</div>
+
+		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1" /></noscript>
+	</body>
+</html>
